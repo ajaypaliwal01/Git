@@ -10,3 +10,6 @@ def bubbleSort(arr):
         // # repeat one time more than needed.
         // # Last i elements are already in place
         for j in range(0, n-i-1):
+         if arr[j] > arr[j + 1]:
+                swapped = True
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
